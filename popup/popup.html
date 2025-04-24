@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Configuration mensuelle</h2>
+    
+    <div class="input-group">
+      <label>Jours ouvrés :</label>
+      <input type="number" id="businessDays" min="0" value="20">
+    </div>
+
+    <div class="input-group">
+      <label>Bonus Days :</label>
+      <input type="number" id="bonusDays" min="0" value="0">
+    </div>
+
+    <div class="result">
+      <h3>Objectif total : <span id="totalHours">140</span>h</h3>
+    </div>
+
+    <button id="fetchHours">Récupérer les heures</button>
+  </div>
+
+  <script src="../webextension-polyfill.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
