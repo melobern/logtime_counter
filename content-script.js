@@ -1,4 +1,3 @@
-
 browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.action === "fetchHours") {
     const hoursElements = Array.from(document.querySelectorAll('*'))
